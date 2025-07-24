@@ -25,24 +25,6 @@ class CatApiService {
     }
   }
 
-  static Future<List<CatBreed>> searchBreeds(String query, {
-    int limit = 10,
-  }) async {
-    try {
-      final response = await http.get(
-        Uri.parse('$baseUrl/breeds/search?q=$query&limit=$limit'),
-      );
-
-      if (response.statusCode == 200) {
-        final List<dynamic> data = json.decode(response.body);
-        return data.map((json) => CatBreed.fromJson(json)).toList();
-      } else {
-        throw Exception('Failed to search breeds: ${response.statusCode}');
-      }
-    } catch (e) {
-      throw Exception('Error searching breeds: $e');
-    }
-  }
 
   static String getImageUrl(String? referenceImageId) {
     if (referenceImageId == null || referenceImageId.isEmpty) {

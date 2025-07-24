@@ -46,9 +46,33 @@ lib/
 
 ### Endpoints:
 - `GET /breeds?limit=20&page=0` - Lista de razas
-- `GET /breeds/search?q={query}` - Búsqueda de razas
 
-## 📱 Pantallas
+## 📱 Screenshots
+
+<div align="center">
+
+### Splash Screen
+<img src="Screenshots/splash.png" width="250" alt="Splash Screen"/>
+
+*Pantalla inicial con logo y animación de carga*
+
+---
+
+### Landing Screen (Home)
+<img src="Screenshots/home.png" width="250" alt="Home Screen"/>
+
+*Lista de razas con búsqueda en tiempo real*
+
+---
+
+### Detail Screen
+<img src="Screenshots/detail.png" width="250" alt="Detail Screen"/>
+
+*Información completa de la raza seleccionada*
+
+</div>
+
+## 📱 Funcionalidades de Pantallas
 
 ### 1. Splash Screen
 - Logo de la aplicación
